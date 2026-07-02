@@ -1,0 +1,3168 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+public/
+  favicon.svg
+  icons.svg
+server/
+  index.js
+  package.json
+src/
+  components/
+    Auth.jsx
+    Chat.jsx
+    Profile.jsx
+  utils/
+    api.js
+    mockApi.js
+    socket.js
+    storage.js
+  App.jsx
+  index.css
+  main.jsx
+.gitignore
+index.html
+package.json
+vite.config.js
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="public/favicon.svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="46" fill="none" viewBox="0 0 48 46"><path fill="#863bff" d="M25.946 44.938c-.664.845-2.021.375-2.021-.698V33.937a2.26 2.26 0 0 0-2.262-2.262H10.287c-.92 0-1.456-1.04-.92-1.788l7.48-10.471c1.07-1.497 0-3.578-1.842-3.578H1.237c-.92 0-1.456-1.04-.92-1.788L10.013.474c.214-.297.556-.474.92-.474h28.894c.92 0 1.456 1.04.92 1.788l-7.48 10.471c-1.07 1.498 0 3.579 1.842 3.579h11.377c.943 0 1.473 1.088.89 1.83L25.947 44.94z" style="fill:#863bff;fill:color(display-p3 .5252 .23 1);fill-opacity:1"/><mask id="a" width="48" height="46" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#000" d="M25.842 44.938c-.664.844-2.021.375-2.021-.698V33.937a2.26 2.26 0 0 0-2.262-2.262H10.183c-.92 0-1.456-1.04-.92-1.788l7.48-10.471c1.07-1.498 0-3.579-1.842-3.579H1.133c-.92 0-1.456-1.04-.92-1.787L9.91.473c.214-.297.556-.474.92-.474h28.894c.92 0 1.456 1.04.92 1.788l-7.48 10.471c-1.07 1.498 0 3.578 1.842 3.578h11.377c.943 0 1.473 1.088.89 1.832L25.843 44.94z" style="fill:#000;fill-opacity:1"/></mask><g mask="url(#a)"><g filter="url(#b)"><ellipse cx="5.508" cy="14.704" fill="#ede6ff" rx="5.508" ry="14.704" style="fill:#ede6ff;fill:color(display-p3 .9275 .9033 1);fill-opacity:1" transform="matrix(.00324 1 1 -.00324 -4.47 31.516)"/></g><g filter="url(#c)"><ellipse cx="10.399" cy="29.851" fill="#ede6ff" rx="10.399" ry="29.851" style="fill:#ede6ff;fill:color(display-p3 .9275 .9033 1);fill-opacity:1" transform="matrix(.00324 1 1 -.00324 -39.328 7.883)"/></g><g filter="url(#d)"><ellipse cx="5.508" cy="30.487" fill="#7e14ff" rx="5.508" ry="30.487" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.814 -25.913 -14.639)scale(1 -1)"/></g><g filter="url(#e)"><ellipse cx="5.508" cy="30.599" fill="#7e14ff" rx="5.508" ry="30.599" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.814 -32.644 -3.334)scale(1 -1)"/></g><g filter="url(#f)"><ellipse cx="5.508" cy="30.599" fill="#7e14ff" rx="5.508" ry="30.599" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="matrix(.00324 1 1 -.00324 -34.34 30.47)"/></g><g filter="url(#g)"><ellipse cx="14.072" cy="22.078" fill="#ede6ff" rx="14.072" ry="22.078" style="fill:#ede6ff;fill:color(display-p3 .9275 .9033 1);fill-opacity:1" transform="rotate(93.35 24.506 48.493)scale(-1 1)"/></g><g filter="url(#h)"><ellipse cx="3.47" cy="21.501" fill="#7e14ff" rx="3.47" ry="21.501" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.009 28.708 47.59)scale(-1 1)"/></g><g filter="url(#i)"><ellipse cx="3.47" cy="21.501" fill="#7e14ff" rx="3.47" ry="21.501" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.009 28.708 47.59)scale(-1 1)"/></g><g filter="url(#j)"><ellipse cx=".387" cy="8.972" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(39.51 .387 8.972)"/></g><g filter="url(#k)"><ellipse cx="47.523" cy="-6.092" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 47.523 -6.092)"/></g><g filter="url(#l)"><ellipse cx="41.412" cy="6.333" fill="#47bfff" rx="5.971" ry="9.665" style="fill:#47bfff;fill:color(display-p3 .2799 .748 1);fill-opacity:1" transform="rotate(37.892 41.412 6.333)"/></g><g filter="url(#m)"><ellipse cx="-1.879" cy="38.332" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 -1.88 38.332)"/></g><g filter="url(#n)"><ellipse cx="-1.879" cy="38.332" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 -1.88 38.332)"/></g><g filter="url(#o)"><ellipse cx="35.651" cy="29.907" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 35.651 29.907)"/></g><g filter="url(#p)"><ellipse cx="38.418" cy="32.4" fill="#47bfff" rx="5.971" ry="15.297" style="fill:#47bfff;fill:color(display-p3 .2799 .748 1);fill-opacity:1" transform="rotate(37.892 38.418 32.4)"/></g></g><defs><filter id="b" width="60.045" height="41.654" x="-19.77" y="16.149" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="7.659"/></filter><filter id="c" width="90.34" height="51.437" x="-54.613" y="-7.533" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="7.659"/></filter><filter id="d" width="79.355" height="29.4" x="-49.64" y="2.03" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="e" width="79.579" height="29.4" x="-45.045" y="20.029" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="f" width="79.579" height="29.4" x="-43.513" y="21.178" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="g" width="74.749" height="58.852" x="15.756" y="-17.901" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="7.659"/></filter><filter id="h" width="61.377" height="25.362" x="23.548" y="2.284" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="i" width="61.377" height="25.362" x="23.548" y="2.284" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="j" width="56.045" height="63.649" x="-27.636" y="-22.853" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="k" width="54.814" height="64.646" x="20.116" y="-38.415" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="l" width="33.541" height="35.313" x="24.641" y="-11.323" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="m" width="54.814" height="64.646" x="-29.286" y="6.009" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="n" width="54.814" height="64.646" x="-29.286" y="6.009" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="o" width="54.814" height="64.646" x="8.244" y="-2.416" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="p" width="39.409" height="43.623" x="18.713" y="10.588" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter></defs></svg>
+</file>
+
+<file path="public/icons.svg">
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="bluesky-icon" viewBox="0 0 16 17">
+    <g clip-path="url(#bluesky-clip)"><path fill="#08060d" d="M7.75 7.735c-.693-1.348-2.58-3.86-4.334-5.097-1.68-1.187-2.32-.981-2.74-.79C.188 2.065.1 2.812.1 3.251s.241 3.602.398 4.13c.52 1.744 2.367 2.333 4.07 2.145-2.495.37-4.71 1.278-1.805 4.512 3.196 3.309 4.38-.71 4.987-2.746.608 2.036 1.307 5.91 4.93 2.746 2.72-2.746.747-4.143-1.747-4.512 1.702.189 3.55-.4 4.07-2.145.156-.528.397-3.691.397-4.13s-.088-1.186-.575-1.406c-.42-.19-1.06-.395-2.741.79-1.755 1.24-3.64 3.752-4.334 5.099"/></g>
+    <defs><clipPath id="bluesky-clip"><path fill="#fff" d="M.1.85h15.3v15.3H.1z"/></clipPath></defs>
+  </symbol>
+  <symbol id="discord-icon" viewBox="0 0 20 19">
+    <path fill="#08060d" d="M16.224 3.768a14.5 14.5 0 0 0-3.67-1.153c-.158.286-.343.67-.47.976a13.5 13.5 0 0 0-4.067 0c-.128-.306-.317-.69-.476-.976A14.4 14.4 0 0 0 3.868 3.77C1.546 7.28.916 10.703 1.231 14.077a14.7 14.7 0 0 0 4.5 2.306q.545-.748.965-1.587a9.5 9.5 0 0 1-1.518-.74q.191-.14.372-.293c2.927 1.369 6.107 1.369 8.999 0q.183.152.372.294-.723.437-1.52.74.418.838.963 1.588a14.6 14.6 0 0 0 4.504-2.308c.37-3.911-.63-7.302-2.644-10.309m-9.13 8.234c-.878 0-1.599-.82-1.599-1.82 0-.998.705-1.82 1.6-1.82.894 0 1.614.82 1.599 1.82.001 1-.705 1.82-1.6 1.82m5.91 0c-.878 0-1.599-.82-1.599-1.82 0-.998.705-1.82 1.6-1.82.893 0 1.614.82 1.599 1.82 0 1-.706 1.82-1.6 1.82"/>
+  </symbol>
+  <symbol id="documentation-icon" viewBox="0 0 21 20">
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="m15.5 13.333 1.533 1.322c.645.555.967.833.967 1.178s-.322.623-.967 1.179L15.5 18.333m-3.333-5-1.534 1.322c-.644.555-.966.833-.966 1.178s.322.623.966 1.179l1.534 1.321"/>
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M17.167 10.836v-4.32c0-1.41 0-2.117-.224-2.68-.359-.906-1.118-1.621-2.08-1.96-.599-.21-1.349-.21-2.848-.21-2.623 0-3.935 0-4.983.369-1.684.591-3.013 1.842-3.641 3.428C3 6.449 3 7.684 3 10.154v2.122c0 2.558 0 3.838.706 4.726q.306.383.713.671c.76.536 1.79.64 3.581.66"/>
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M3 10a2.78 2.78 0 0 1 2.778-2.778c.555 0 1.209.097 1.748-.047.48-.129.854-.503.982-.982.145-.54.048-1.194.048-1.749a2.78 2.78 0 0 1 2.777-2.777"/>
+  </symbol>
+  <symbol id="github-icon" viewBox="0 0 19 19">
+    <path fill="#08060d" fill-rule="evenodd" d="M9.356 1.85C5.05 1.85 1.57 5.356 1.57 9.694a7.84 7.84 0 0 0 5.324 7.44c.387.079.528-.168.528-.376 0-.182-.013-.805-.013-1.454-2.165.467-2.616-.935-2.616-.935-.349-.91-.864-1.143-.864-1.143-.71-.48.051-.48.051-.48.787.051 1.2.805 1.2.805.695 1.194 1.817.857 2.268.649.064-.507.27-.857.49-1.052-1.728-.182-3.545-.857-3.545-3.87 0-.857.31-1.558.8-2.104-.078-.195-.349-1 .077-2.078 0 0 .657-.208 2.14.805a7.5 7.5 0 0 1 1.946-.26c.657 0 1.328.092 1.946.26 1.483-1.013 2.14-.805 2.14-.805.426 1.078.155 1.883.078 2.078.502.546.799 1.247.799 2.104 0 3.013-1.818 3.675-3.558 3.87.284.247.528.714.528 1.454 0 1.052-.012 1.896-.012 2.156 0 .208.142.455.528.377a7.84 7.84 0 0 0 5.324-7.441c.013-4.338-3.48-7.844-7.773-7.844" clip-rule="evenodd"/>
+  </symbol>
+  <symbol id="social-icon" viewBox="0 0 20 20">
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M12.5 6.667a4.167 4.167 0 1 0-8.334 0 4.167 4.167 0 0 0 8.334 0"/>
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M2.5 16.667a5.833 5.833 0 0 1 8.75-5.053m3.837.474.513 1.035c.07.144.257.282.414.309l.93.155c.596.1.736.536.307.965l-.723.73a.64.64 0 0 0-.152.531l.207.903c.164.715-.213.991-.84.618l-.872-.52a.63.63 0 0 0-.577 0l-.872.52c-.624.373-1.003.094-.84-.618l.207-.903a.64.64 0 0 0-.152-.532l-.723-.729c-.426-.43-.289-.864.306-.964l.93-.156a.64.64 0 0 0 .412-.31l.513-1.034c.28-.562.735-.562 1.012 0"/>
+  </symbol>
+  <symbol id="x-icon" viewBox="0 0 19 19">
+    <path fill="#08060d" fill-rule="evenodd" d="M1.893 1.98c.052.072 1.245 1.769 2.653 3.77l2.892 4.114c.183.261.333.48.333.486s-.068.089-.152.183l-.522.593-.765.867-3.597 4.087c-.375.426-.734.834-.798.905a1 1 0 0 0-.118.148c0 .01.236.017.664.017h.663l.729-.83c.4-.457.796-.906.879-.999a692 692 0 0 0 1.794-2.038c.034-.037.301-.34.594-.675l.551-.624.345-.392a7 7 0 0 1 .34-.374c.006 0 .93 1.306 2.052 2.903l2.084 2.965.045.063h2.275c1.87 0 2.273-.003 2.266-.021-.008-.02-1.098-1.572-3.894-5.547-2.013-2.862-2.28-3.246-2.273-3.266.008-.019.282-.332 2.085-2.38l2-2.274 1.567-1.782c.022-.028-.016-.03-.65-.03h-.674l-.3.342a871 871 0 0 1-1.782 2.025c-.067.075-.405.458-.75.852a100 100 0 0 1-.803.91c-.148.172-.299.344-.99 1.127-.304.343-.32.358-.345.327-.015-.019-.904-1.282-1.976-2.808L6.365 1.85H1.8zm1.782.91 8.078 11.294c.772 1.08 1.413 1.973 1.425 1.984.016.017.241.02 1.05.017l1.03-.004-2.694-3.766L7.796 5.75 5.722 2.852l-1.039-.004-1.039-.004z" clip-rule="evenodd"/>
+  </symbol>
+</svg>
+</file>
+
+<file path="server/index.js">
+import express from 'express';
+import { createServer } from 'http';
+import { Server } from 'socket.io';
+import Database from 'better-sqlite3';
+import cors from 'cors';
+import crypto from 'crypto';
+
+const app = express();
+const httpServer = createServer(app);
+const io = new Server(httpServer, { cors: { origin: '*' } });
+
+app.use(cors());
+app.use(express.json({ limit: '10mb' }));
+
+const db = new Database(':memory:');
+db.pragma('journal_mode = WAL');
+db.pragma('foreign_keys = ON');
+
+db.exec(`
+  CREATE TABLE users (
+    id TEXT PRIMARY KEY,
+    username TEXT NOT NULL,
+    email TEXT UNIQUE NOT NULL,
+    password TEXT NOT NULL,
+    contactNumber TEXT UNIQUE NOT NULL,
+    profilePicture TEXT DEFAULT NULL,
+    createdAt INTEGER NOT NULL
+  );
+
+  CREATE TABLE messages (
+    id TEXT PRIMARY KEY,
+    senderId TEXT NOT NULL,
+    recipientId TEXT NOT NULL,
+    text TEXT NOT NULL,
+    timestamp INTEGER NOT NULL,
+    FOREIGN KEY (senderId) REFERENCES users(id),
+    FOREIGN KEY (recipientId) REFERENCES users(id)
+  );
+
+  CREATE TABLE conversations (
+    userId TEXT NOT NULL,
+    partnerId TEXT NOT NULL,
+    createdAt INTEGER NOT NULL,
+    PRIMARY KEY (userId, partnerId),
+    FOREIGN KEY (userId) REFERENCES users(id),
+    FOREIGN KEY (partnerId) REFERENCES users(id)
+  );
+
+  CREATE TABLE tokens (
+    token TEXT PRIMARY KEY,
+    userId TEXT NOT NULL,
+    FOREIGN KEY (userId) REFERENCES users(id)
+  );
+
+  CREATE INDEX idx_msg_participants ON messages(senderId, recipientId);
+  CREATE INDEX idx_msg_timestamp ON messages(timestamp);
+  CREATE INDEX idx_users_contact ON users(contactNumber);
+  CREATE INDEX idx_conv_user ON conversations(userId);
+`);
+
+const seedUsers = [
+  { username: 'Alice Johnson', email: 'alice@example.com', password: 'password123', contactNumber: '+1111111111' },
+  { username: 'Bob Smith', email: 'bob@example.com', password: 'password123', contactNumber: '+2222222222' },
+  { username: 'Charlie Brown', email: 'charlie@example.com', password: 'password123', contactNumber: '+3333333333' },
+  { username: 'Diana Prince', email: 'diana@example.com', password: 'password123', contactNumber: '+4444444444' },
+  { username: 'Eve Williams', email: 'eve@example.com', password: 'password123', contactNumber: '+5555555555' },
+];
+
+const insertUser = db.prepare(
+  'INSERT INTO users (id, username, email, password, contactNumber, profilePicture, createdAt) VALUES (?, ?, ?, ?, ?, NULL, ?)'
+);
+
+const seededIds = [];
+seedUsers.forEach((u) => {
+  const id = 'user_' + crypto.randomBytes(8).toString('hex');
+  insertUser.run(id, u.username, u.email, u.password, u.contactNumber, Date.now());
+  seededIds.push(id);
+});
+
+const insertMsg = db.prepare(
+  'INSERT INTO messages (id, senderId, recipientId, text, timestamp) VALUES (?, ?, ?, ?, ?)'
+);
+const insertConv = db.prepare(
+  'INSERT OR IGNORE INTO conversations (userId, partnerId, createdAt) VALUES (?, ?, ?)'
+);
+
+const now = Date.now();
+const demoMessages = [
+  { from: 0, to: 1, text: 'Hey Bob! How are you doing?', offset: -7200000 },
+  { from: 1, to: 0, text: 'Hi Alice! Im great, thanks! Working on the new project.', offset: -7100000 },
+  { from: 0, to: 1, text: 'Sounds exciting! Tell me more about it.', offset: -7000000 },
+  { from: 1, to: 0, text: 'Its a chat application built with React and Node.js 🚀', offset: -6900000 },
+  { from: 2, to: 3, text: 'Diana, did you finish the report?', offset: -3600000 },
+  { from: 3, to: 2, text: 'Almost done Charlie! Just need to review the numbers.', offset: -3500000 },
+  { from: 4, to: 0, text: 'Alice, are we still on for coffee tomorrow?', offset: -1800000 },
+  { from: 0, to: 4, text: 'Absolutely Eve! See you at 10am ☕', offset: -1700000 },
+];
+
+demoMessages.forEach((m) => {
+  const msgId = 'msg_' + crypto.randomBytes(8).toString('hex');
+  const ts = now + m.offset;
+  insertMsg.run(msgId, seededIds[m.from], seededIds[m.to], m.text, ts);
+  insertConv.run(seededIds[m.from], seededIds[m.to], ts);
+  insertConv.run(seededIds[m.to], seededIds[m.from], ts);
+});
+
+const generateToken = () => crypto.randomBytes(32).toString('hex');
+
+const authenticate = (req, res, next) => {
+  const authHeader = req.headers.authorization;
+  if (!authHeader || !authHeader.startsWith('Bearer ')) {
+    return res.status(401).json({ error: 'Unauthorized' });
+  }
+  const token = authHeader.split(' ')[1];
+  const row = db.prepare('SELECT userId FROM tokens WHERE token = ?').get(token);
+  if (!row) return res.status(401).json({ error: 'Invalid token' });
+
+  const user = db
+    .prepare('SELECT id, username, email, contactNumber, profilePicture, createdAt FROM users WHERE id = ?')
+    .get(row.userId);
+  if (!user) return res.status(401).json({ error: 'User not found' });
+
+  req.user = user;
+  next();
+};
+
+app.post('/api/auth/signup', (req, res) => {
+  const { username, email, password, contactNumber } = req.body;
+  if (!username || !email || !password || !contactNumber) {
+    return res.status(400).json({ error: 'All fields are required' });
+  }
+
+  const existing = db.prepare('SELECT id FROM users WHERE email = ? OR contactNumber = ?').get(email, contactNumber);
+  if (existing) {
+    return res.status(409).json({ error: 'User already exists with this email or contact number' });
+  }
+
+  const id = 'user_' + crypto.randomBytes(8).toString('hex');
+  db.prepare(
+    'INSERT INTO users (id, username, email, password, contactNumber, createdAt) VALUES (?, ?, ?, ?, ?, ?)'
+  ).run(id, username, email, password, contactNumber, Date.now());
+
+  const token = generateToken();
+  db.prepare('INSERT INTO tokens (token, userId) VALUES (?, ?)').run(token, id);
+
+  const user = db
+    .prepare('SELECT id, username, email, contactNumber, profilePicture, createdAt FROM users WHERE id = ?')
+    .get(id);
+  res.json({ user, token });
+});
+
+app.post('/api/auth/signin', (req, res) => {
+  const { email, password } = req.body;
+  if (!email || !password) {
+    return res.status(400).json({ error: 'Email and password are required' });
+  }
+
+  const row = db.prepare('SELECT * FROM users WHERE email = ? AND password = ?').get(email, password);
+  if (!row) {
+    return res.status(401).json({ error: 'Invalid email or password' });
+  }
+
+  const token = generateToken();
+  db.prepare('INSERT INTO tokens (token, userId) VALUES (?, ?)').run(token, row.id);
+
+  const { password: _, ...user } = row;
+  res.json({ user, token });
+});
+
+app.get('/api/users/search', authenticate, (req, res) => {
+  const q = req.query.q;
+  if (!q || q.trim().length === 0) return res.json([]);
+
+  const users = db
+    .prepare(
+      'SELECT id, username, contactNumber, profilePicture FROM users WHERE contactNumber LIKE ? AND id != ?'
+    )
+    .all(`%${q}%`, req.user.id);
+  res.json(users);
+});
+
+app.get('/api/users/profile', authenticate, (req, res) => {
+  res.json(req.user);
+});
+
+app.put('/api/users/profile', authenticate, (req, res) => {
+  const { username, email, contactNumber, profilePicture } = req.body;
+  db.prepare(
+    `UPDATE users SET
+      username = COALESCE(?, username),
+      email = COALESCE(?, email),
+      contactNumber = COALESCE(?, contactNumber),
+      profilePicture = COALESCE(?, profilePicture)
+    WHERE id = ?`
+  ).run(username || null, email || null, contactNumber || null, profilePicture || null, req.user.id);
+
+  const updated = db
+    .prepare('SELECT id, username, email, contactNumber, profilePicture, createdAt FROM users WHERE id = ?')
+    .get(req.user.id);
+  res.json(updated);
+});
+
+app.post('/api/conversations', authenticate, (req, res) => {
+  const { partnerId } = req.body;
+  if (!partnerId) return res.status(400).json({ error: 'partnerId is required' });
+
+  const partner = db.prepare('SELECT id FROM users WHERE id = ?').get(partnerId);
+  if (!partner) return res.status(404).json({ error: 'User not found' });
+
+  db.prepare('INSERT OR IGNORE INTO conversations (userId, partnerId, createdAt) VALUES (?, ?, ?)').run(
+    req.user.id,
+    partnerId,
+    Date.now()
+  );
+
+  res.json({ success: true });
+});
+
+app.get('/api/chats', authenticate, (req, res) => {
+  const conversations = db
+    .prepare(
+      `SELECT c.partnerId, u.username AS partnerName, u.contactNumber AS partnerNumber, u.profilePicture AS partnerPicture, c.createdAt
+       FROM conversations c
+       JOIN users u ON u.id = c.partnerId
+       WHERE c.userId = ?`
+    )
+    .all(req.user.id);
+
+  const getLastMsg = db.prepare(
+    `SELECT text, timestamp, senderId FROM messages
+     WHERE (senderId = ? AND recipientId = ?) OR (senderId = ? AND recipientId = ?)
+     ORDER BY timestamp DESC LIMIT 1`
+  );
+
+  const result = conversations.map((conv) => {
+    const lastMsg = getLastMsg.get(req.user.id, conv.partnerId, conv.partnerId, req.user.id);
+    return {
+      partnerId: conv.partnerId,
+      partnerName: conv.partnerName,
+      partnerNumber: conv.partnerNumber,
+      partnerPicture: conv.partnerPicture,
+      lastMessage: lastMsg?.text || null,
+      lastMessageTime: lastMsg?.timestamp || conv.createdAt,
+      lastMessageSenderId: lastMsg?.senderId || null,
+    };
+  });
+
+  result.sort((a, b) => (b.lastMessageTime || 0) - (a.lastMessageTime || 0));
+  res.json(result);
+});
+
+app.get('/api/messages/:partnerId', authenticate, (req, res) => {
+  const messages = db
+    .prepare(
+      `SELECT id, senderId, recipientId, text, timestamp
+       FROM messages
+       WHERE (senderId = ? AND recipientId = ?) OR (senderId = ? AND recipientId = ?)
+       ORDER BY timestamp ASC`
+    )
+    .all(req.user.id, req.params.partnerId, req.params.partnerId, req.user.id);
+
+  res.json(messages);
+});
+
+app.post('/api/messages', authenticate, (req, res) => {
+  const { recipientId, text } = req.body;
+  if (!recipientId || !text) {
+    return res.status(400).json({ error: 'recipientId and text are required' });
+  }
+
+  const recipient = db.prepare('SELECT id, username, contactNumber FROM users WHERE id = ?').get(recipientId);
+  if (!recipient) return res.status(404).json({ error: 'Recipient not found' });
+
+  const id = 'msg_' + crypto.randomBytes(8).toString('hex');
+  const timestamp = Date.now();
+
+  db.prepare('INSERT INTO messages (id, senderId, recipientId, text, timestamp) VALUES (?, ?, ?, ?, ?)').run(
+    id,
+    req.user.id,
+    recipientId,
+    text,
+    timestamp
+  );
+
+  db.prepare('INSERT OR IGNORE INTO conversations (userId, partnerId, createdAt) VALUES (?, ?, ?)').run(
+    req.user.id,
+    recipientId,
+    timestamp
+  );
+  db.prepare('INSERT OR IGNORE INTO conversations (userId, partnerId, createdAt) VALUES (?, ?, ?)').run(
+    recipientId,
+    req.user.id,
+    timestamp
+  );
+
+  const message = { id, senderId: req.user.id, recipientId, text, timestamp };
+
+  const recipientSocketId = onlineUsers.get(recipientId);
+  if (recipientSocketId) {
+    io.to(recipientSocketId).emit('new_message', {
+      ...message,
+      senderName: req.user.username,
+      senderNumber: req.user.contactNumber,
+      senderPicture: req.user.profilePicture,
+    });
+  }
+
+  res.json(message);
+});
+
+app.post('/api/sync', authenticate, (req, res) => {
+  res.json({ success: true, timestamp: Date.now() });
+});
+
+const onlineUsers = new Map();
+
+io.on('connection', (socket) => {
+  socket.on('join', (userId) => {
+    onlineUsers.set(userId, socket.id);
+    socket.userId = userId;
+    io.emit('user_online', userId);
+  });
+
+  socket.on('disconnect', () => {
+    if (socket.userId) {
+      onlineUsers.delete(socket.userId);
+      io.emit('user_offline', socket.userId);
+    }
+  });
+});
+
+const PORT = 3001;
+httpServer.listen(PORT, () => {
+  console.log(`\n  Plaban Chat Server running on http://localhost:${PORT}\n`);
+  console.log('  Dummy accounts (all passwords: password123):');
+  console.log('  ─────────────────────────────────────────────');
+  seedUsers.forEach((u) => {
+    console.log(`  ${u.username.padEnd(16)} │ ${u.email.padEnd(22)} │ ${u.contactNumber}`);
+  });
+  console.log('');
+});
+</file>
+
+<file path="server/package.json">
+{
+  "name": "plaban-chat-server",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "socket.io": "^4.8.0"
+  }
+}
+</file>
+
+<file path="src/components/Auth.jsx">
+import { useState } from 'react';
+import { api } from '../utils/api';
+
+export default function Auth({ onAuthSuccess }) {
+  const [isSignUp, setIsSignUp] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    password: '',
+    contactNumber: '',
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setError('');
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError('');
+
+    try {
+      let result;
+      if (isSignUp) {
+        if (!formData.username || !formData.email || !formData.password || !formData.contactNumber) {
+          throw new Error('All fields are required');
+        }
+        result = await api.signUp(formData);
+      } else {
+        if (!formData.email || !formData.password) {
+          throw new Error('Email and password are required');
+        }
+        result = await api.signIn(formData.email, formData.password);
+      }
+      onAuthSuccess(result.user, result.token);
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const toggleMode = () => {
+    setIsSignUp(!isSignUp);
+    setError('');
+    setFormData({ username: '', email: '', password: '', contactNumber: '' });
+  };
+
+  return (
+    <div className="auth-container">
+      <div className="auth-card">
+        <div className="auth-header">
+          <div className="auth-logo">
+            <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <defs>
+                <linearGradient id="logoGrad" x1="0" y1="0" x2="48" y2="48">
+                  <stop offset="0%" stopColor="#6366f1" />
+                  <stop offset="100%" stopColor="#8b5cf6" />
+                </linearGradient>
+              </defs>
+              <rect width="48" height="48" rx="14" fill="url(#logoGrad)" />
+              <path d="M14 18C14 15.7909 15.7909 14 18 14H30C32.2091 14 34 15.7909 34 18V26C34 28.2091 32.2091 30 30 30H22L17 34V30H18C15.7909 30 14 28.2091 14 26V18Z" fill="white" fillOpacity="0.9" />
+              <circle cx="21" cy="22" r="1.5" fill="#6366f1" />
+              <circle cx="27" cy="22" r="1.5" fill="#6366f1" />
+            </svg>
+          </div>
+          <h1>Plaban Chat</h1>
+          <p className="auth-subtitle">{isSignUp ? 'Create your account' : 'Welcome back'}</p>
+        </div>
+
+        {error && (
+          <div className="auth-error">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M8 1a7 7 0 100 14A7 7 0 008 1zm-.75 4.25a.75.75 0 011.5 0v3a.75.75 0 01-1.5 0v-3zM8 11.5a.75.75 0 100-1.5.75.75 0 000 1.5z" />
+            </svg>
+            {error}
+          </div>
+        )}
+
+        <form onSubmit={handleSubmit} className="auth-form">
+          {isSignUp && (
+            <>
+              <div className="input-group">
+                <label htmlFor="username">Username</label>
+                <input
+                  id="username"
+                  name="username"
+                  type="text"
+                  placeholder="Choose a username"
+                  value={formData.username}
+                  onChange={handleChange}
+                  autoComplete="username"
+                />
+              </div>
+              <div className="input-group">
+                <label htmlFor="contactNumber">Contact Number</label>
+                <input
+                  id="contactNumber"
+                  name="contactNumber"
+                  type="tel"
+                  placeholder="+1 (555) 000-0000"
+                  value={formData.contactNumber}
+                  onChange={handleChange}
+                  autoComplete="tel"
+                />
+              </div>
+            </>
+          )}
+
+          <div className="input-group">
+            <label htmlFor="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              value={formData.email}
+              onChange={handleChange}
+              autoComplete="email"
+            />
+          </div>
+
+          <div className="input-group">
+            <label htmlFor="password">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="••••••••"
+              value={formData.password}
+              onChange={handleChange}
+              autoComplete={isSignUp ? 'new-password' : 'current-password'}
+            />
+          </div>
+
+          <button type="submit" className="auth-btn" disabled={loading}>
+            {loading ? (
+              <span className="btn-spinner"></span>
+            ) : isSignUp ? (
+              'Create Account'
+            ) : (
+              'Sign In'
+            )}
+          </button>
+        </form>
+
+        <div className="auth-footer">
+          <span>{isSignUp ? 'Already have an account?' : "Don't have an account?"}</span>
+          <button type="button" className="auth-toggle" onClick={toggleMode}>
+            {isSignUp ? 'Sign In' : 'Sign Up'}
+          </button>
+        </div>
+
+        <div className="auth-demo-info">
+          <p className="demo-title">Demo Accounts</p>
+          <div className="demo-accounts">
+            <span>alice@example.com</span>
+            <span>bob@example.com</span>
+            <span>charlie@example.com</span>
+            <span>diana@example.com</span>
+            <span>eve@example.com</span>
+          </div>
+          <p className="demo-password">Password for all: <strong>password123</strong></p>
+        </div>
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/Chat.jsx">
+import { useState, useEffect, useRef, useCallback } from 'react';
+import { api } from '../utils/api';
+import { getSocket } from '../utils/socket';
+import Profile from './Profile';
+
+const SYNC_INTERVAL = 3600000;
+const CHAT_REFRESH_INTERVAL = 10000;
+
+export default function Chat({ user, onLogout, onUserUpdate }) {
+  const [chats, setChats] = useState([]);
+  const [activeChat, setActiveChat] = useState(null);
+  const [messages, setMessages] = useState([]);
+  const [messageInput, setMessageInput] = useState('');
+  const [showNewChat, setShowNewChat] = useState(false);
+  const [newChatSearch, setNewChatSearch] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
+  const [searching, setSearching] = useState(false);
+  const [showProfile, setShowProfile] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [syncStatus, setSyncStatus] = useState('idle');
+  const [sidebarFilter, setSidebarFilter] = useState('');
+  const [showMobileSidebar, setShowMobileSidebar] = useState(true);
+  const [onlineUsers, setOnlineUsers] = useState(new Set());
+  const messagesEndRef = useRef(null);
+  const messageInputRef = useRef(null);
+  const searchTimeoutRef = useRef(null);
+  const activeChatRef = useRef(null);
+
+  useEffect(() => {
+    activeChatRef.current = activeChat;
+  }, [activeChat]);
+
+  const loadChats = useCallback(async () => {
+    try {
+      const data = await api.getChats();
+      setChats(data);
+    } catch {
+      /* silent */
+    }
+  }, []);
+
+  const loadMessages = useCallback(async (partnerId) => {
+    try {
+      const data = await api.getMessages(partnerId);
+      setMessages(data);
+    } catch {
+      /* silent */
+    }
+  }, []);
+
+  useEffect(() => {
+    const init = async () => {
+      setLoading(true);
+      await loadChats();
+      setLoading(false);
+    };
+    init();
+  }, [loadChats]);
+
+  useEffect(() => {
+    const socket = getSocket();
+    if (!socket) return;
+
+    const handleNewMessage = (data) => {
+      const current = activeChatRef.current;
+      if (current && data.senderId === current.partnerId) {
+        setMessages((prev) => {
+          if (prev.some((m) => m.id === data.id)) return prev;
+          return [...prev, data];
+        });
+      }
+      loadChats();
+    };
+
+    const handleUserOnline = (userId) => {
+      setOnlineUsers((prev) => new Set([...prev, userId]));
+    };
+
+    const handleUserOffline = (userId) => {
+      setOnlineUsers((prev) => {
+        const next = new Set(prev);
+        next.delete(userId);
+        return next;
+      });
+    };
+
+    socket.on('new_message', handleNewMessage);
+    socket.on('user_online', handleUserOnline);
+    socket.on('user_offline', handleUserOffline);
+
+    return () => {
+      socket.off('new_message', handleNewMessage);
+      socket.off('user_online', handleUserOnline);
+      socket.off('user_offline', handleUserOffline);
+    };
+  }, [loadChats]);
+
+  useEffect(() => {
+    if (!activeChat) return;
+    loadMessages(activeChat.partnerId);
+  }, [activeChat?.partnerId, loadMessages]);
+
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [messages]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      loadChats();
+      if (activeChatRef.current) {
+        loadMessages(activeChatRef.current.partnerId);
+      }
+    }, CHAT_REFRESH_INTERVAL);
+    return () => clearInterval(interval);
+  }, [loadChats, loadMessages]);
+
+  useEffect(() => {
+    const syncInterval = setInterval(async () => {
+      setSyncStatus('syncing');
+      try {
+        await api.syncChats();
+        setSyncStatus('synced');
+        setTimeout(() => setSyncStatus('idle'), 3000);
+      } catch {
+        setSyncStatus('error');
+        setTimeout(() => setSyncStatus('idle'), 3000);
+      }
+    }, SYNC_INTERVAL);
+    return () => clearInterval(syncInterval);
+  }, []);
+
+  const handleSearchUsers = (query) => {
+    setNewChatSearch(query);
+    if (searchTimeoutRef.current) clearTimeout(searchTimeoutRef.current);
+
+    if (!query.trim()) {
+      setSearchResults([]);
+      setSearching(false);
+      return;
+    }
+
+    setSearching(true);
+    searchTimeoutRef.current = setTimeout(async () => {
+      try {
+        const results = await api.searchUsers(query.trim());
+        setSearchResults(results);
+      } catch {
+        setSearchResults([]);
+      } finally {
+        setSearching(false);
+      }
+    }, 300);
+  };
+
+  const handleSelectSearchResult = async (selectedUser) => {
+    try {
+      await api.createConversation(selectedUser.id);
+      await loadChats();
+      setActiveChat({
+        partnerId: selectedUser.id,
+        partnerName: selectedUser.username,
+        partnerNumber: selectedUser.contactNumber,
+        partnerPicture: selectedUser.profilePicture,
+      });
+      setNewChatSearch('');
+      setSearchResults([]);
+      setShowNewChat(false);
+      setShowMobileSidebar(false);
+    } catch {
+      /* silent */
+    }
+  };
+
+  const handleSendMessage = async (e) => {
+    e.preventDefault();
+    if (!messageInput.trim() || !activeChat) return;
+
+    const text = messageInput.trim();
+    setMessageInput('');
+
+    try {
+      const msg = await api.sendMessage(activeChat.partnerId, text);
+      setMessages((prev) => [...prev, msg]);
+      loadChats();
+      messageInputRef.current?.focus();
+    } catch {
+      setMessageInput(text);
+    }
+  };
+
+  const selectChat = (chat) => {
+    setActiveChat({
+      partnerId: chat.partnerId,
+      partnerName: chat.partnerName,
+      partnerNumber: chat.partnerNumber,
+      partnerPicture: chat.partnerPicture,
+    });
+    setShowMobileSidebar(false);
+  };
+
+  const formatTime = (ts) => {
+    return new Date(ts).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  };
+
+  const formatDate = (ts) => {
+    const d = new Date(ts);
+    const today = new Date();
+    if (d.toDateString() === today.toDateString()) return 'Today';
+    const yesterday = new Date(today);
+    yesterday.setDate(yesterday.getDate() - 1);
+    if (d.toDateString() === yesterday.toDateString()) return 'Yesterday';
+    return d.toLocaleDateString([], { month: 'short', day: 'numeric' });
+  };
+
+  const getLastMessagePreview = (chat) => {
+    if (!chat.lastMessage) return '';
+    const prefix = chat.lastMessageSenderId === user.id ? 'You: ' : '';
+    const text = chat.lastMessage;
+    return prefix + (text.length > 30 ? text.slice(0, 30) + '…' : text);
+  };
+
+  const getInitials = (name) => {
+    return (name || '?')
+      .split(' ')
+      .map((n) => n[0])
+      .join('')
+      .toUpperCase()
+      .slice(0, 2);
+  };
+
+  const groupMessagesByDate = (msgs) => {
+    const groups = [];
+    let currentDate = '';
+    msgs.forEach((msg) => {
+      const date = formatDate(msg.timestamp);
+      if (date !== currentDate) {
+        currentDate = date;
+        groups.push({ type: 'date', date, key: 'date-' + msg.timestamp });
+      }
+      groups.push({ type: 'message', ...msg, key: msg.id });
+    });
+    return groups;
+  };
+
+  const filteredChats = chats.filter(
+    (c) =>
+      c.partnerName.toLowerCase().includes(sidebarFilter.toLowerCase()) ||
+      c.partnerNumber.includes(sidebarFilter)
+  );
+
+  if (loading) {
+    return (
+      <div className="chat-loading">
+        <div className="loading-spinner"></div>
+        <p>Loading your chats...</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="chat-container">
+      <div className={`chat-sidebar ${showMobileSidebar ? 'sidebar-visible' : ''}`}>
+        <div className="sidebar-header">
+          <div className="sidebar-user" onClick={() => setShowProfile(true)}>
+            <div className="sidebar-avatar">
+              {user.profilePicture ? (
+                <img src={user.profilePicture} alt="" />
+              ) : (
+                <span>{getInitials(user.username)}</span>
+              )}
+            </div>
+            <div className="sidebar-user-info">
+              <span className="sidebar-username">{user.username}</span>
+              {syncStatus === 'syncing' && <span className="sync-badge syncing">Syncing…</span>}
+              {syncStatus === 'synced' && <span className="sync-badge synced">Synced ✓</span>}
+              {syncStatus === 'error' && <span className="sync-badge error">Sync failed</span>}
+            </div>
+          </div>
+          <div className="sidebar-actions">
+            <button className="icon-btn" onClick={() => setShowNewChat(!showNewChat)} title="New chat">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                <line x1="12" y1="8" x2="12" y2="14" />
+                <line x1="9" y1="11" x2="15" y2="11" />
+              </svg>
+            </button>
+            <button className="icon-btn" onClick={onLogout} title="Sign out">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4" />
+                <polyline points="16,17 21,12 16,7" />
+                <line x1="21" y1="12" x2="9" y2="12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        {showNewChat && (
+          <div className="new-chat-section">
+            <div className="new-chat-header">
+              <h3>New Chat</h3>
+              <button className="icon-btn-sm" onClick={() => { setShowNewChat(false); setSearchResults([]); setNewChatSearch(''); }}>
+                <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+                </svg>
+              </button>
+            </div>
+            <div className="new-chat-search">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <input
+                type="tel"
+                placeholder="Search by contact number..."
+                value={newChatSearch}
+                onChange={(e) => handleSearchUsers(e.target.value)}
+                autoFocus
+              />
+            </div>
+            <div className="search-results">
+              {searching && (
+                <div className="search-loading">
+                  <div className="loading-spinner-sm"></div>
+                  <span>Searching...</span>
+                </div>
+              )}
+              {!searching && newChatSearch && searchResults.length === 0 && (
+                <div className="search-empty">
+                  <p>No users found</p>
+                </div>
+              )}
+              {searchResults.map((u) => (
+                <div key={u.id} className="search-result-item" onClick={() => handleSelectSearchResult(u)}>
+                  <div className="search-result-avatar">
+                    {u.profilePicture ? (
+                      <img src={u.profilePicture} alt="" />
+                    ) : (
+                      <span>{getInitials(u.username)}</span>
+                    )}
+                  </div>
+                  <div className="search-result-info">
+                    <span className="search-result-name">{u.username}</span>
+                    <span className="search-result-number">{u.contactNumber}</span>
+                  </div>
+                  <svg className="search-result-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <polyline points="9,18 15,12 9,6" />
+                  </svg>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {!showNewChat && (
+          <div className="sidebar-search">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+            <input
+              type="text"
+              placeholder="Filter conversations..."
+              value={sidebarFilter}
+              onChange={(e) => setSidebarFilter(e.target.value)}
+            />
+          </div>
+        )}
+
+        <div className="chat-list">
+          {filteredChats.length === 0 && !showNewChat ? (
+            <div className="empty-chats">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+              </svg>
+              <p>No conversations yet</p>
+              <span>Tap the + button to start a new chat</span>
+            </div>
+          ) : (
+            filteredChats.map((chat) => (
+              <div
+                key={chat.partnerId}
+                className={`chat-item ${activeChat?.partnerId === chat.partnerId ? 'active' : ''}`}
+                onClick={() => selectChat(chat)}
+              >
+                <div className="chat-item-avatar-wrap">
+                  <div className="chat-item-avatar">
+                    {chat.partnerPicture ? (
+                      <img src={chat.partnerPicture} alt="" />
+                    ) : (
+                      <span>{getInitials(chat.partnerName)}</span>
+                    )}
+                  </div>
+                  {onlineUsers.has(chat.partnerId) && <div className="online-dot"></div>}
+                </div>
+                <div className="chat-item-info">
+                  <div className="chat-item-top">
+                    <span className="chat-item-name">{chat.partnerName}</span>
+                    {chat.lastMessageTime && (
+                      <span className="chat-item-time">{formatTime(chat.lastMessageTime)}</span>
+                    )}
+                  </div>
+                  <p className="chat-item-preview">{getLastMessagePreview(chat)}</p>
+                </div>
+              </div>
+            ))
+          )}
+        </div>
+      </div>
+
+      <div className={`chat-main ${!showMobileSidebar ? 'main-visible' : ''}`}>
+        {activeChat ? (
+          <>
+            <div className="chat-main-header">
+              <button className="back-btn" onClick={() => setShowMobileSidebar(true)}>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <polyline points="15,18 9,12 15,6" />
+                </svg>
+              </button>
+              <div className="chat-main-avatar-wrap">
+                <div className="chat-main-avatar">
+                  {activeChat.partnerPicture ? (
+                    <img src={activeChat.partnerPicture} alt="" />
+                  ) : (
+                    <span>{getInitials(activeChat.partnerName)}</span>
+                  )}
+                </div>
+                {onlineUsers.has(activeChat.partnerId) && <div className="online-dot"></div>}
+              </div>
+              <div className="chat-main-info">
+                <h3>{activeChat.partnerName}</h3>
+                <span className="chat-contact-number">
+                  {onlineUsers.has(activeChat.partnerId) ? 'Online' : activeChat.partnerNumber}
+                </span>
+              </div>
+            </div>
+
+            <div className="messages-area">
+              {messages.length === 0 ? (
+                <div className="empty-messages">
+                  <div className="empty-messages-icon">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" />
+                    </svg>
+                  </div>
+                  <p>No messages yet</p>
+                  <span>Say hi to {activeChat.partnerName}!</span>
+                </div>
+              ) : (
+                groupMessagesByDate(messages).map((item) =>
+                  item.type === 'date' ? (
+                    <div key={item.key} className="date-separator">
+                      <span>{item.date}</span>
+                    </div>
+                  ) : (
+                    <div
+                      key={item.key}
+                      className={`message ${item.senderId === user.id ? 'message-sent' : 'message-received'}`}
+                    >
+                      <div className="message-bubble">
+                        <p>{item.text}</p>
+                        <span className="message-time">{formatTime(item.timestamp)}</span>
+                      </div>
+                    </div>
+                  )
+                )
+              )}
+              <div ref={messagesEndRef} />
+            </div>
+
+            <form className="message-input-area" onSubmit={handleSendMessage}>
+              <input
+                ref={messageInputRef}
+                type="text"
+                placeholder="Type a message..."
+                value={messageInput}
+                onChange={(e) => setMessageInput(e.target.value)}
+                autoFocus
+              />
+              <button type="submit" className="send-btn" disabled={!messageInput.trim()}>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                </svg>
+              </button>
+            </form>
+          </>
+        ) : (
+          <div className="no-chat-selected">
+            <div className="no-chat-icon">
+              <svg width="80" height="80" viewBox="0 0 48 48" fill="none">
+                <defs>
+                  <linearGradient id="emptyGrad" x1="0" y1="0" x2="48" y2="48">
+                    <stop offset="0%" stopColor="#6366f1" stopOpacity="0.2" />
+                    <stop offset="100%" stopColor="#8b5cf6" stopOpacity="0.2" />
+                  </linearGradient>
+                </defs>
+                <rect width="48" height="48" rx="14" fill="url(#emptyGrad)" />
+                <path d="M14 18C14 15.7909 15.7909 14 18 14H30C32.2091 14 34 15.7909 34 18V26C34 28.2091 32.2091 30 30 30H22L17 34V30H18C15.7909 30 14 28.2091 14 26V18Z" fill="none" stroke="#6366f1" strokeWidth="1.5" strokeOpacity="0.5" />
+              </svg>
+            </div>
+            <h2>Plaban Chat</h2>
+            <p>Select a conversation or start a new chat</p>
+          </div>
+        )}
+      </div>
+
+      {showProfile && (
+        <Profile
+          user={user}
+          onUpdate={onUserUpdate}
+          onClose={() => setShowProfile(false)}
+        />
+      )}
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/Profile.jsx">
+import { useState, useRef } from 'react';
+import { api } from '../utils/api';
+
+export default function Profile({ user, onUpdate, onClose }) {
+  const [editing, setEditing] = useState(false);
+  const [formData, setFormData] = useState({
+    username: user.username || '',
+    email: user.email || '',
+    contactNumber: user.contactNumber || '',
+    profilePicture: user.profilePicture || null,
+  });
+  const [saving, setSaving] = useState(false);
+  const fileInputRef = useRef(null);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleImageUpload = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      setFormData({ ...formData, profilePicture: ev.target.result });
+    };
+    reader.readAsDataURL(file);
+  };
+
+  const handleSave = async () => {
+    setSaving(true);
+    try {
+      const updated = await api.updateProfile(formData);
+      onUpdate(updated);
+      setEditing(false);
+    } catch {
+      /* silent */
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const getInitials = (name) => {
+    return (name || 'U')
+      .split(' ')
+      .map((n) => n[0])
+      .join('')
+      .toUpperCase()
+      .slice(0, 2);
+  };
+
+  return (
+    <div className="profile-overlay" onClick={onClose}>
+      <div className="profile-panel" onClick={(e) => e.stopPropagation()}>
+        <div className="profile-header">
+          <h2>Profile</h2>
+          <button className="profile-close" onClick={onClose}>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+            </svg>
+          </button>
+        </div>
+
+        <div className="profile-body">
+          <div className="profile-avatar-section">
+            <div
+              className="profile-avatar"
+              onClick={() => editing && fileInputRef.current?.click()}
+              style={{ cursor: editing ? 'pointer' : 'default' }}
+            >
+              {formData.profilePicture ? (
+                <img src={formData.profilePicture} alt="Profile" />
+              ) : (
+                <span className="avatar-initials">{getInitials(formData.username)}</span>
+              )}
+              {editing && (
+                <div className="avatar-edit-overlay">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                    <path d="M12 9a3 3 0 100 6 3 3 0 000-6zm0 8a5 5 0 110-10 5 5 0 010 10zm6.5-12.5h-3l-1.3-1.5H9.8L8.5 4.5h-3A2.5 2.5 0 003 7v10a2.5 2.5 0 002.5 2.5h13A2.5 2.5 0 0021 17V7a2.5 2.5 0 00-2.5-2.5z" />
+                  </svg>
+                </div>
+              )}
+            </div>
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept="image/*"
+              onChange={handleImageUpload}
+              style={{ display: 'none' }}
+            />
+            {!editing && <p className="profile-name">{formData.username}</p>}
+          </div>
+
+          {editing ? (
+            <div className="profile-form">
+              <div className="input-group">
+                <label htmlFor="profile-username">Username</label>
+                <input id="profile-username" name="username" type="text" value={formData.username} onChange={handleChange} />
+              </div>
+              <div className="input-group">
+                <label htmlFor="profile-email">Email</label>
+                <input id="profile-email" name="email" type="email" value={formData.email} onChange={handleChange} />
+              </div>
+              <div className="input-group">
+                <label htmlFor="profile-contact">Contact Number</label>
+                <input id="profile-contact" name="contactNumber" type="tel" value={formData.contactNumber} onChange={handleChange} />
+              </div>
+              <div className="profile-actions">
+                <button className="btn-secondary" onClick={() => setEditing(false)}>Cancel</button>
+                <button className="btn-primary" onClick={handleSave} disabled={saving}>
+                  {saving ? <span className="btn-spinner"></span> : 'Save Changes'}
+                </button>
+              </div>
+            </div>
+          ) : (
+            <div className="profile-details">
+              <div className="detail-row">
+                <div className="detail-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                  </svg>
+                </div>
+                <div className="detail-content">
+                  <span className="detail-label">Username</span>
+                  <span className="detail-value">{formData.username}</span>
+                </div>
+              </div>
+              <div className="detail-row">
+                <div className="detail-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+                <div className="detail-content">
+                  <span className="detail-label">Email</span>
+                  <span className="detail-value">{formData.email}</span>
+                </div>
+              </div>
+              <div className="detail-row">
+                <div className="detail-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+                  </svg>
+                </div>
+                <div className="detail-content">
+                  <span className="detail-label">Contact</span>
+                  <span className="detail-value">{formData.contactNumber}</span>
+                </div>
+              </div>
+              <button className="btn-primary edit-btn" onClick={() => setEditing(true)}>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7" />
+                  <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" />
+                </svg>
+                Edit Profile
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="src/utils/api.js">
+const API_URL = '/api';
+
+const getHeaders = () => {
+  const token = localStorage.getItem('plaban_token');
+  return {
+    'Content-Type': 'application/json',
+    ...(token ? { Authorization: `Bearer ${token}` } : {}),
+  };
+};
+
+const handleResponse = async (res) => {
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.error || 'Request failed');
+  return data;
+};
+
+export const api = {
+  signIn: (email, password) =>
+    fetch(`${API_URL}/auth/signin`, {
+      method: 'POST',
+      headers: getHeaders(),
+      body: JSON.stringify({ email, password }),
+    }).then(handleResponse),
+
+  signUp: (data) =>
+    fetch(`${API_URL}/auth/signup`, {
+      method: 'POST',
+      headers: getHeaders(),
+      body: JSON.stringify(data),
+    }).then(handleResponse),
+
+  searchUsers: (query) =>
+    fetch(`${API_URL}/users/search?q=${encodeURIComponent(query)}`, {
+      headers: getHeaders(),
+    }).then(handleResponse),
+
+  getChats: () =>
+    fetch(`${API_URL}/chats`, { headers: getHeaders() }).then(handleResponse),
+
+  getMessages: (partnerId) =>
+    fetch(`${API_URL}/messages/${partnerId}`, { headers: getHeaders() }).then(handleResponse),
+
+  sendMessage: (recipientId, text) =>
+    fetch(`${API_URL}/messages`, {
+      method: 'POST',
+      headers: getHeaders(),
+      body: JSON.stringify({ recipientId, text }),
+    }).then(handleResponse),
+
+  createConversation: (partnerId) =>
+    fetch(`${API_URL}/conversations`, {
+      method: 'POST',
+      headers: getHeaders(),
+      body: JSON.stringify({ partnerId }),
+    }).then(handleResponse),
+
+  updateProfile: (data) =>
+    fetch(`${API_URL}/users/profile`, {
+      method: 'PUT',
+      headers: getHeaders(),
+      body: JSON.stringify(data),
+    }).then(handleResponse),
+
+  syncChats: () =>
+    fetch(`${API_URL}/sync`, {
+      method: 'POST',
+      headers: getHeaders(),
+    }).then(handleResponse),
+};
+</file>
+
+<file path="src/utils/mockApi.js">
+export const mockFetchChats = (userId) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve([
+        {
+          contactNumber: '+1234567890',
+          contactName: 'Alice',
+          messages: [
+            { id: 'mock-1', text: 'Hey, welcome to Plaban Chat!', sender: 'them', timestamp: Date.now() - 86400000 },
+            { id: 'mock-2', text: 'Thanks! Great to be here.', sender: 'me', timestamp: Date.now() - 86300000 },
+          ],
+        },
+      ]);
+    }, 800);
+  });
+};
+
+export const mockSyncChats = (userId, chatData) => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve({ success: true, synced: chatData.length, timestamp: Date.now() });
+    }, 500);
+  });
+};
+
+export const mockSignIn = (email, password) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const users = JSON.parse(localStorage.getItem('plaban_users') || '[]');
+      const user = users.find((u) => u.email === email && u.password === password);
+      if (user) {
+        resolve({ ...user, password: undefined });
+      } else {
+        reject(new Error('Invalid email or password'));
+      }
+    }, 600);
+  });
+};
+
+export const mockSignUp = (userData) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const users = JSON.parse(localStorage.getItem('plaban_users') || '[]');
+      const exists = users.find((u) => u.email === userData.email || u.contactNumber === userData.contactNumber);
+      if (exists) {
+        reject(new Error('User already exists with this email or contact number'));
+        return;
+      }
+      const newUser = {
+        id: 'user_' + Date.now(),
+        ...userData,
+        profilePicture: null,
+        createdAt: Date.now(),
+      };
+      users.push(newUser);
+      localStorage.setItem('plaban_users', JSON.stringify(users));
+      resolve({ ...newUser, password: undefined });
+    }, 600);
+  });
+};
+</file>
+
+<file path="src/utils/socket.js">
+import { io } from 'socket.io-client';
+
+let socket = null;
+
+export const connectSocket = () => {
+  if (socket) return socket;
+  socket = io(window.location.origin, {
+    transports: ['websocket', 'polling'],
+  });
+  return socket;
+};
+
+export const getSocket = () => socket;
+
+export const joinRoom = (userId) => {
+  if (socket) socket.emit('join', userId);
+};
+
+export const disconnectSocket = () => {
+  if (socket) {
+    socket.disconnect();
+    socket = null;
+  }
+};
+</file>
+
+<file path="src/utils/storage.js">
+const CHAT_KEY_PREFIX = 'plaban_chats_';
+const USER_KEY = 'plaban_current_user';
+const SYNC_LOG_KEY = 'plaban_last_sync';
+
+export const saveCurrentUser = (user) => {
+  localStorage.setItem(USER_KEY, JSON.stringify(user));
+};
+
+export const getCurrentUser = () => {
+  const data = localStorage.getItem(USER_KEY);
+  return data ? JSON.parse(data) : null;
+};
+
+export const clearCurrentUser = () => {
+  localStorage.removeItem(USER_KEY);
+};
+
+export const getChatKey = (userId) => CHAT_KEY_PREFIX + userId;
+
+export const loadChats = (userId) => {
+  const data = localStorage.getItem(getChatKey(userId));
+  return data ? JSON.parse(data) : null;
+};
+
+export const saveChats = (userId, chats) => {
+  localStorage.setItem(getChatKey(userId), JSON.stringify(chats));
+};
+
+export const addMessageToChat = (userId, contactNumber, message, contactName) => {
+  const chats = loadChats(userId) || [];
+  let chat = chats.find((c) => c.contactNumber === contactNumber);
+  if (!chat) {
+    chat = { contactNumber, contactName: contactName || contactNumber, messages: [] };
+    chats.push(chat);
+  }
+  chat.messages.push(message);
+  chat.lastMessageTime = message.timestamp;
+  saveChats(userId, chats);
+  return chats;
+};
+
+export const getLastSyncTime = () => {
+  const data = localStorage.getItem(SYNC_LOG_KEY);
+  return data ? parseInt(data, 10) : null;
+};
+
+export const setLastSyncTime = (time) => {
+  localStorage.setItem(SYNC_LOG_KEY, time.toString());
+};
+
+export const updateUserProfile = (updatedUser) => {
+  saveCurrentUser(updatedUser);
+  const users = JSON.parse(localStorage.getItem('plaban_users') || '[]');
+  const idx = users.findIndex((u) => u.id === updatedUser.id);
+  if (idx !== -1) {
+    users[idx] = { ...users[idx], ...updatedUser };
+    localStorage.setItem('plaban_users', JSON.stringify(users));
+  }
+};
+</file>
+
+<file path="src/App.jsx">
+import { useState, useEffect } from 'react';
+import Auth from './components/Auth';
+import Chat from './components/Chat';
+import { connectSocket, joinRoom, disconnectSocket } from './utils/socket';
+
+export default function App() {
+  const [user, setUser] = useState(null);
+  const [token, setToken] = useState(null);
+  const [checkingAuth, setCheckingAuth] = useState(true);
+
+  useEffect(() => {
+    const savedToken = localStorage.getItem('plaban_token');
+    const savedUser = localStorage.getItem('plaban_user');
+    if (savedToken && savedUser) {
+      const parsedUser = JSON.parse(savedUser);
+      setToken(savedToken);
+      setUser(parsedUser);
+      connectSocket();
+      joinRoom(parsedUser.id);
+    }
+    setCheckingAuth(false);
+  }, []);
+
+  const handleAuthSuccess = (authenticatedUser, authToken) => {
+    localStorage.setItem('plaban_token', authToken);
+    localStorage.setItem('plaban_user', JSON.stringify(authenticatedUser));
+    setToken(authToken);
+    setUser(authenticatedUser);
+    connectSocket();
+    joinRoom(authenticatedUser.id);
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem('plaban_token');
+    localStorage.removeItem('plaban_user');
+    disconnectSocket();
+    setToken(null);
+    setUser(null);
+  };
+
+  const handleUserUpdate = (updatedUser) => {
+    localStorage.setItem('plaban_user', JSON.stringify(updatedUser));
+    setUser(updatedUser);
+  };
+
+  if (checkingAuth) {
+    return (
+      <div className="app-loading">
+        <div className="loading-spinner"></div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="app">
+      {user ? (
+        <Chat user={user} onLogout={handleLogout} onUserUpdate={handleUserUpdate} />
+      ) : (
+        <Auth onAuthSuccess={handleAuthSuccess} />
+      )}
+    </div>
+  );
+}
+</file>
+
+<file path="src/index.css">
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #12121a;
+  --bg-tertiary: #1a1a28;
+  --bg-elevated: #222236;
+  --bg-hover: #2a2a42;
+  --surface-glass: rgba(255, 255, 255, 0.03);
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-light: rgba(255, 255, 255, 0.1);
+  --border-focus: rgba(99, 102, 241, 0.5);
+  --text-primary: #f0f0f5;
+  --text-secondary: #9292a8;
+  --text-muted: #5e5e78;
+  --accent-primary: #6366f1;
+  --accent-secondary: #8b5cf6;
+  --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+  --accent-glow: rgba(99, 102, 241, 0.15);
+  --success: #22c55e;
+  --error: #ef4444;
+  --warning: #f59e0b;
+  --message-sent: linear-gradient(135deg, #6366f1, #7c3aed);
+  --message-received: #1e1e30;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 48px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 32px rgba(99, 102, 241, 0.2);
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+}
+
+.app-loading {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-primary);
+}
+
+.loading-spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--border-subtle);
+  border-top-color: var(--accent-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+.loading-spinner-sm {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--border-subtle);
+  border-top-color: var(--accent-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(24px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.btn-spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+}
+
+.auth-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-primary);
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-container::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  left: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.auth-container::after {
+  content: '';
+  position: absolute;
+  bottom: -40%;
+  right: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 40px 36px;
+  animation: slideUp 0.6s var(--transition-slow);
+  position: relative;
+  z-index: 1;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.auth-logo {
+  display: inline-flex;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 4px 16px rgba(99, 102, 241, 0.3));
+}
+
+.auth-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 8px;
+}
+
+.auth-subtitle {
+  color: var(--text-secondary);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.auth-error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: var(--radius-md);
+  color: #fca5a5;
+  font-size: 13px;
+  margin-bottom: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-group label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  letter-spacing: 0.01em;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 16px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-family: inherit;
+  transition: all var(--transition-fast);
+  outline: none;
+}
+
+.input-group input::placeholder {
+  color: var(--text-muted);
+}
+
+.input-group input:focus {
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+  background: var(--bg-elevated);
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 13px 24px;
+  background: var(--accent-gradient);
+  border: none;
+  border-radius: var(--radius-md);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  margin-top: 4px;
+}
+
+.auth-btn:hover:not(:disabled) {
+  filter: brightness(1.1);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-1px);
+}
+
+.auth-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.auth-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.auth-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 24px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.auth-toggle {
+  background: none;
+  border: none;
+  color: var(--accent-primary);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+  padding: 0;
+}
+
+.auth-toggle:hover {
+  color: var(--accent-secondary);
+}
+
+.auth-demo-info {
+  margin-top: 28px;
+  padding: 16px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.demo-title {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-primary);
+  margin-bottom: 10px;
+}
+
+.demo-accounts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.demo-accounts span {
+  padding: 4px 10px;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+
+.demo-password {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.demo-password strong {
+  color: var(--text-secondary);
+}
+
+.chat-container {
+  height: 100%;
+  display: flex;
+  background: var(--bg-primary);
+}
+
+.chat-loading {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+}
+
+.chat-sidebar {
+  width: 360px;
+  min-width: 360px;
+  height: 100%;
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-subtle);
+  min-height: 68px;
+}
+
+.sidebar-user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: var(--radius-md);
+  transition: background var(--transition-fast);
+}
+
+.sidebar-user:hover {
+  background: var(--bg-tertiary);
+}
+
+.sidebar-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  background: var(--accent-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.sidebar-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sidebar-avatar span {
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+}
+
+.sidebar-user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sidebar-username {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.sync-badge {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 1px 0;
+}
+
+.sync-badge.syncing {
+  color: var(--warning);
+  animation: pulse 1.5s infinite;
+}
+
+.sync-badge.synced {
+  color: var(--success);
+}
+
+.sync-badge.error {
+  color: var(--error);
+}
+
+.sidebar-actions {
+  display: flex;
+  gap: 4px;
+}
+
+.icon-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.icon-btn:hover {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+.icon-btn-sm {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-sm);
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.icon-btn-sm:hover {
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+}
+
+.new-chat-section {
+  border-bottom: 1px solid var(--border-subtle);
+  animation: fadeIn 0.2s ease;
+  background: var(--bg-tertiary);
+}
+
+.new-chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px 0;
+}
+
+.new-chat-header h3 {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.new-chat-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  color: var(--text-muted);
+}
+
+.new-chat-search input {
+  flex: 1;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.new-chat-search input:focus {
+  border-color: var(--border-focus);
+}
+
+.new-chat-search input::placeholder {
+  color: var(--text-muted);
+}
+
+.search-results {
+  max-height: 260px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg-elevated) transparent;
+}
+
+.search-results::-webkit-scrollbar {
+  width: 4px;
+}
+
+.search-results::-webkit-scrollbar-thumb {
+  background: var(--bg-elevated);
+  border-radius: 4px;
+}
+
+.search-loading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.search-empty {
+  padding: 20px;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.search-result-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.search-result-item:hover {
+  background: var(--bg-elevated);
+}
+
+.search-result-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: var(--accent-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.search-result-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.search-result-avatar span {
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+}
+
+.search-result-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.search-result-name {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.search-result-number {
+  display: block;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.search-result-arrow {
+  color: var(--text-muted);
+  flex-shrink: 0;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.search-result-item:hover .search-result-arrow {
+  opacity: 1;
+}
+
+.sidebar-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+}
+
+.sidebar-search input {
+  flex: 1;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+}
+
+.sidebar-search input::placeholder {
+  color: var(--text-muted);
+}
+
+.chat-list {
+  flex: 1;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg-elevated) transparent;
+}
+
+.chat-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.chat-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-list::-webkit-scrollbar-thumb {
+  background: var(--bg-elevated);
+  border-radius: 4px;
+}
+
+.empty-chats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  color: var(--text-muted);
+  text-align: center;
+  gap: 12px;
+}
+
+.empty-chats svg {
+  opacity: 0.3;
+}
+
+.empty-chats p {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.empty-chats span {
+  font-size: 13px;
+}
+
+.chat-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 20px;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.chat-item:hover {
+  background: var(--bg-tertiary);
+}
+
+.chat-item.active {
+  background: var(--bg-tertiary);
+  border-left: 3px solid var(--accent-primary);
+  padding-left: 17px;
+}
+
+.chat-item-avatar-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.chat-item-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  background: var(--bg-elevated);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.chat-item-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chat-item-avatar span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-primary);
+}
+
+.online-dot {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  width: 12px;
+  height: 12px;
+  background: var(--success);
+  border: 2px solid var(--bg-secondary);
+  border-radius: 50%;
+}
+
+.chat-item-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.chat-item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.chat-item-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chat-item-time {
+  font-size: 12px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.chat-item-preview {
+  font-size: 13px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chat-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-primary);
+  min-width: 0;
+}
+
+.chat-main-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 24px;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-subtle);
+  min-height: 68px;
+}
+
+.back-btn {
+  display: none;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.back-btn:hover {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+.chat-main-avatar-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.chat-main-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: var(--bg-elevated);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.chat-main-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chat-main-avatar span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-primary);
+}
+
+.chat-main-info h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.chat-contact-number {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.messages-area {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg-elevated) transparent;
+}
+
+.messages-area::-webkit-scrollbar {
+  width: 4px;
+}
+
+.messages-area::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.messages-area::-webkit-scrollbar-thumb {
+  background: var(--bg-elevated);
+  border-radius: 4px;
+}
+
+.empty-messages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.empty-messages-icon {
+  opacity: 0.2;
+}
+
+.empty-messages p {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.empty-messages span {
+  font-size: 13px;
+}
+
+.date-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0 12px;
+}
+
+.date-separator span {
+  padding: 4px 14px;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-full);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.message {
+  display: flex;
+  animation: fadeIn 0.2s ease;
+  margin-bottom: 2px;
+}
+
+.message-sent {
+  justify-content: flex-end;
+}
+
+.message-received {
+  justify-content: flex-start;
+}
+
+.message-bubble {
+  max-width: 65%;
+  padding: 10px 16px;
+  border-radius: var(--radius-lg);
+  position: relative;
+}
+
+.message-sent .message-bubble {
+  background: var(--message-sent);
+  border-bottom-right-radius: 4px;
+  color: white;
+}
+
+.message-received .message-bubble {
+  background: var(--message-received);
+  border: 1px solid var(--border-subtle);
+  border-bottom-left-radius: 4px;
+  color: var(--text-primary);
+}
+
+.message-bubble p {
+  font-size: 14px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.message-time {
+  font-size: 11px;
+  opacity: 0.6;
+  margin-top: 4px;
+  display: block;
+  text-align: right;
+}
+
+.message-received .message-time {
+  color: var(--text-muted);
+  opacity: 1;
+}
+
+.message-input-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 24px;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.message-input-area input {
+  flex: 1;
+  padding: 12px 18px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: all var(--transition-fast);
+}
+
+.message-input-area input::placeholder {
+  color: var(--text-muted);
+}
+
+.message-input-area input:focus {
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.send-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  border: none;
+  background: var(--accent-gradient);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.send-btn:hover:not(:disabled) {
+  filter: brightness(1.15);
+  transform: scale(1.05);
+  box-shadow: var(--shadow-glow);
+}
+
+.send-btn:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.send-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.no-chat-selected {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 24px;
+}
+
+.no-chat-icon {
+  margin-bottom: 8px;
+  animation: fadeIn 0.5s ease;
+}
+
+.no-chat-selected h2 {
+  font-size: 24px;
+  font-weight: 700;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.no-chat-selected p {
+  font-size: 14px;
+}
+
+.profile-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+  animation: fadeIn 0.2s ease;
+}
+
+.profile-panel {
+  width: 400px;
+  max-width: 100%;
+  height: 100%;
+  background: var(--bg-secondary);
+  border-left: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  animation: slideInRight 0.3s ease;
+  overflow-y: auto;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.profile-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.profile-close {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.profile-close:hover {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+.profile-body {
+  padding: 32px 24px;
+}
+
+.profile-avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.profile-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: var(--radius-full);
+  background: var(--accent-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  transition: all var(--transition-fast);
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-initials {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+}
+
+.avatar-edit-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.profile-avatar:hover .avatar-edit-overlay {
+  opacity: 1;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  animation: fadeIn 0.3s ease;
+}
+
+.profile-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.btn-primary {
+  flex: 1;
+  padding: 12px 24px;
+  background: var(--accent-gradient);
+  border: none;
+  border-radius: var(--radius-md);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+}
+
+.btn-primary:hover:not(:disabled) {
+  filter: brightness(1.1);
+  box-shadow: var(--shadow-glow);
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  flex: 1;
+  padding: 12px 24px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  min-height: 44px;
+}
+
+.btn-secondary:hover {
+  background: var(--bg-elevated);
+  border-color: var(--border-light);
+}
+
+.edit-btn {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.profile-details {
+  animation: fadeIn 0.3s ease;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.detail-row:last-of-type {
+  border-bottom: none;
+}
+
+.detail-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  background: var(--bg-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-primary);
+  flex-shrink: 0;
+}
+
+.detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.detail-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.detail-value {
+  font-size: 15px;
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .chat-sidebar {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    min-width: 100%;
+    z-index: 50;
+    transform: translateX(-100%);
+    transition: transform var(--transition-base);
+  }
+
+  .chat-sidebar.sidebar-visible {
+    transform: translateX(0);
+  }
+
+  .chat-main {
+    width: 100%;
+  }
+
+  .chat-main.main-visible {
+    display: flex;
+  }
+
+  .back-btn {
+    display: flex;
+  }
+
+  .profile-panel {
+    width: 100%;
+  }
+
+  .message-bubble {
+    max-width: 80%;
+  }
+
+  .auth-card {
+    padding: 32px 24px;
+  }
+
+  .no-chat-selected {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-header {
+    padding: 12px 16px;
+  }
+
+  .chat-item {
+    padding: 12px 16px;
+  }
+
+  .messages-area {
+    padding: 16px;
+  }
+
+  .message-input-area {
+    padding: 12px 16px;
+  }
+
+  .chat-main-header {
+    padding: 12px 16px;
+    gap: 10px;
+  }
+
+  .message-bubble {
+    max-width: 85%;
+  }
+
+  .sidebar-search {
+    padding: 10px 16px;
+  }
+
+  .new-chat-search {
+    padding: 10px 16px;
+  }
+
+  .new-chat-header {
+    padding: 10px 16px 0;
+  }
+
+  .search-result-item {
+    padding: 10px 16px;
+  }
+
+  .auth-card {
+    padding: 24px 18px;
+    border-radius: var(--radius-lg);
+  }
+
+  .auth-header h1 {
+    font-size: 24px;
+  }
+
+  .demo-accounts {
+    gap: 4px;
+  }
+
+  .demo-accounts span {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .sidebar-user-info {
+    display: none;
+  }
+
+  .message-bubble {
+    max-width: 90%;
+  }
+}
+</file>
+
+<file path="src/main.jsx">
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App';
+import './index.css';
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
+</file>
+
+<file path=".gitignore">
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+</file>
+
+<file path="index.html">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Plaban Chat - A minimal, elegant chat application for seamless communication" />
+    <title>Plaban Chat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+</file>
+
+<file path="package.json">
+{
+  "name": "plaban-chat-application",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "socket.io-client": "^4.8.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.5.2",
+    "vite": "^6.0.0"
+  }
+}
+</file>
+
+<file path="vite.config.js">
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3001',
+        changeOrigin: true,
+      },
+      '/socket.io': {
+        target: 'http://localhost:3001',
+        ws: true,
+      },
+    },
+  },
+})
+</file>
+
+</files>
